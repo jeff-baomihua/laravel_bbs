@@ -95,6 +95,9 @@ return [
             'min' => '密码至少:min位',
             'max' => '密码最多:max位',
         ],
+        'email' => [
+            'required' => '邮箱地址不能为空',
+        ]
     ],
 
     /*
