@@ -8426,29 +8426,29 @@ body {
 
 /* User profile page */
 
-.users-show-page .categories-show-page .user-info .thumbnail {
+.users-show-page .user-info .thumbnail {
   margin-bottom: 0px;
 }
 
-.users-show-page .categories-show-page .nav-tabs {
+.users-show-page .nav-tabs {
   margin-bottom: 20px;
 }
 
-.users-show-page .categories-show-page .nav-tabs > li.active > a {
+.users-show-page .nav-tabs > li.active > a {
   background-color: #fff;
 }
 
-.users-show-page .categories-show-page .list-group .list-group-item {
+.users-show-page .list-group .list-group-item {
   border: none;
   margin-bottom: 0px;
   border-bottom: 1px solid #efefef;
 }
 
-.users-show-page .categories-show-page .list-group .list-group-item .meta {
+.users-show-page .list-group .list-group-item .meta {
   color: #b3b3b3;
 }
 
-.users-show-page .categories-show-page .pagination {
+.users-show-page .pagination {
   margin: 12px 0;
 }
 
