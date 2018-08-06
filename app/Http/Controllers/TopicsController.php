@@ -16,7 +16,7 @@ class TopicsController extends Controller
 
 	public function index(Request $request, Topic $topic)
 	{
-        $topics = $topic->withOrder($request->order)->paginate(30);
+        $topics = $topic->withOrder($request->order)->paginate(20);
         return view('topics.index', compact('topics'));
         //$request->order 是获取 URI http://larabbs.test/topics?order=recent中的 order 参数
 //        $topics = $topic->withOrder($request->order)->paginate(20);
