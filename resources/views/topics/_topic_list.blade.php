@@ -9,7 +9,7 @@
                     </a>
                 </div>
 
-                <div class="media-body meta">
+                <div class="media-body">
 
                     <div class="media-heading">
                         <a href="{{ route('topics.show', [$topic->id]) }}" title="{{ $topic->title }}">
