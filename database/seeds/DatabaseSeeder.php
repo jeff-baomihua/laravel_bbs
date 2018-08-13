@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
+//注册数据填充类
 class DatabaseSeeder extends Seeder
 {
     /**
@@ -11,7 +12,9 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
+        //注意顺序
         $this->call(UsersTableSeeder::class);
-		$this->call(TopicsTableSeeder::class);
+        $this->call(TopicsTableSeeder::class);
+        $this->call(ReplysTableSeeder::class);
     }
 }
