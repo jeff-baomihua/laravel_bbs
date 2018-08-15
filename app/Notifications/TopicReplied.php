@@ -44,6 +44,7 @@ class TopicReplied extends Notification implements ShouldQueue
         ];
     }
 
+    //第三方发送的邮件信用高，一般邮件很容易当做了垃圾邮件，比如163 队列发送到 qq的都进了垃圾箱。
     public function toMail($notifiable)
     {
         $url = $this->reply->topic->link(['#reply'.$this->reply->id]);

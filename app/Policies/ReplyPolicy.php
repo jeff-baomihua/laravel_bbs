@@ -5,6 +5,7 @@ namespace App\Policies;
 use App\Models\User;
 use App\Models\Reply;
 
+//权限策略
 class ReplyPolicy extends Policy
 {
     public function update(User $user, Reply $reply)
@@ -15,6 +16,6 @@ class ReplyPolicy extends Policy
 
     public function destroy(User $user, Reply $reply)
     {
-        return true;
+        return $user->isAuthorOf($reply) || $user->isAuthorOf($reply->topic);
     }
 }
