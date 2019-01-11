@@ -55,8 +55,24 @@
                         </a>
 
                         <ul class="dropdown-menu" role="menu">
+                            @can('manage_contents')
+                                <li>
+                                    <a href="{{ url(config('administrator.uri')) }}">
+                                        <span class="glyphicon glyphicon-dashboard" aria-hidden="true"></span>
+                                        管理后台
+                                    </a>
+                                </li>
+                            @endcan
+
+                            <li>
+                                <a href="{{ route('users.show', Auth::id()) }}">
+                                    <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                                    个人中心
+                                </a>
+                            </li>
                             <li>
                                 <a href="{{ route('users.edit', Auth::id()) }}">
+                                    <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
                                     编辑资料
                                 </a>
                             </li>
@@ -65,6 +81,7 @@
                                 <a href="{{ route('logout') }}"
                                    onclick="event.preventDefault();
                                              document.getElementById('logout-form').submit();">
+                                    <span class="glyphicon glyphicon-log-out" aria-hidden="true"></span>
                                     退出登录
                                 </a>
 
