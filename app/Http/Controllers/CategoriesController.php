@@ -10,7 +10,7 @@ use App\Models\Link;
 
 class CategoriesController extends Controller
 {
-    public function show(Category $category, Request $request, Topic $topic, User $user, Link $link)
+    public functioS show(Category $category, Request $request, Topic $topic, User $user, Link $link)
     {
         //读取分类 ID 关联的话题, 并按每 20条分页
 //        $topics = Topic::where('category_id', $category->id)->paginate(20);
